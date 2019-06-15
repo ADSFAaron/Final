@@ -1,0 +1,14 @@
+body
+{
+    background: rgb(70, 70, 70);
+    color: #fff;
+    text-align: center;
+}
+
+li{
+    text-align: left;
+}
+
+ol{
+    text-align: center;
+}
