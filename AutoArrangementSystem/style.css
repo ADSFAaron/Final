@@ -1,0 +1,21 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(70,70,70);
+    color:#ffffff;
+    text-align: center;
+}
+
+table{
+    width:80%;
+    margin: auto;
+    font-size: 2em;
+}
+
+td{
+    border-bottom: 1px dotted skyblue;
+}
+
+#special{
+    background: #ffffff;
+    color: darkcyan;
+}

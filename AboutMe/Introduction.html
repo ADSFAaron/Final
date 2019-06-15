@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Self Introduction</title>
+    <style type="text/css">
+        table,
+        tr,
+        td {
+            border: 2px solid grey;
+            border-collapse: collapse;
+        }
+
+        table {
+            width: 600px;
+            height: 800px;
+        }
+
+        < !-- #table {
+            border-collapse: collapse;
+        }
+
+        -->.centre {
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fff9e6;
+        }
+
+        .box {
+            width: 40px;
+            height: 40px;
+        }
+
+        .slider_container {
+            margin: 10px auto;
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+
+        .slider_container div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            filter: alpha(opacity=0);
+        }
+
+        .slider_container div {
+            -webkit-animation: round 15s linear infinite;
+            animation: round 15s linear infinite;
+        }
+
+        @-webkit-keyframes round {
+            4% {
+                opacity: 1;
+                filter: alpha(opacity=100);
+                /* 0 - 1秒 淡入*/
+            }
+
+            20% {
+                opacity: 1;
+                filter: alpha(opacity=100);
+                /* 1- 5秒靜止*/
+            }
+
+            24% {
+                opacity: 0;
+                filter: alpha(opacity=0);
+                /* 5-6秒淡出*/
+            }
+        }
+
+        @keyframes round {
+            4% {
+                opacity: 1;
+                filter: alpha(opacity=100);
+                /* 0 - 1秒 淡入*/
+            }
+
+            20% {
+                opacity: 1;
+                filter: alpha(opacity=100);
+                /* 1- 5秒靜止*/
+            }
+
+            24% {
+                opacity: 0;
+                filter: alpha(opacity=0);
+                /* 5-6秒淡出*/
+            }
+        }
+
+        .slider_container div:nth-child(5) {
+            -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+        }
+
+        .slider_container div:nth-child(4) {
+            -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+        }
+
+        .slider_container div:nth-child(3) {
+            -webkit-animation-delay: 6s;
+            animation-delay: 6s;
+        }
+
+        .slider_container div:nth-child(2) {
+            -webkit-animation-delay: 9s;
+            animation-delay: 9s;
+        }
+
+        .slider_container div:nth-child(1) {
+            -webkit-animation-delay: 12s;
+            animation-delay: 12s;
+        }
+
+        .slider_container:hover div {
+            -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+        }
+    </style>
+    <script>
+        var die1Image;
+        function start() {
+            var button = document.getElementById("rollButton");
+            button.addEventListener("click", rollDice, false);
+            die1Image = document.getElementById("die1");
+        } // end function start 
+        function rollDice() {
+            setImage(die1Image);
+        } // end function rollDice 
+        function setImage(dieImg) {
+            var dieValue1 = Math.floor(1 + Math.random() * 255);
+            var dieValue2 = Math.floor(1 + Math.random() * 255);
+            var dieValue3 = Math.floor(1 + Math.random() * 255);
+            dieImg.setAttribute("style", "background-color:rgb(" + dieValue1 + "," + dieValue2 + "," + dieValue3 + ");");
+        } // end function setImage
+        window.addEventListener("load", start, false);
+    </script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC');
+
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+    </style>
+</head>
+
+<body id="die1" style="background-color:#e6ffff;">
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-info">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">首頁 <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="../RandomNumber/main.html">隨機選擇</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="../AutoArrangementSystem/index.html">自動排課系統</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="../Karioki/index.html">Youtube 心情點唱機</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="../LOVE Question/index.html">問卷調查</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="../Simple RPG/index.html">RPG</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" target="_blank" href="../AboutMe/Introduction.html">關於我</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br><br><br>
+    <h1 style="text-align:center;color:#808080;">Welcome to 1073338 Reeeeeeeesume</h1>
+    <center>
+        <table border="1" style="text-align:center;" align="center">
+            <tr width=10% height=10%>
+                <td rowspan="4" width=45%>
+                    <!--<img src = "boss.png" width = "150" height = "150"
+                    alt = "My Personal Photo">-->
+                    <div class="slider_container">
+                        <div>
+                            <img src="1.png" alt="pure css3 slider" style="height:200px;" />
+                        </div>
+                        <div>
+                            <img src="2.png" alt="pure css3 slider" style="height:200px;" />
+                        </div>
+                        <div>
+                            <img src="3.png" alt="pure css3 slider" style="height:200px;" />
+                        </div>
+                        <div>
+                            <img src="4.png" alt="pure css3 slider" style="height:200px;" />
+                        </div>
+                        <div>
+                            <img src="5.png" alt="pure css3 slider" style="height:200px;" />
+                        </div>
+                    </div>
+                </td>
+                <td width=15%><img src="name.png" width="40" height="40" alt="Name"></td>
+                <td width=40%>叫我皓皓</td>
+            </tr>
+            <tr width=10% height=10%>
+                <td><img src="phone.png" width="40" height="40" alt="PhoneCall"></td>
+                <td><a href="tel:+886912345679">0912-345-679</a></td>
+            </tr>
+            <tr width=10% height=10%>
+                <td><img src="email.png" width="40" height="40" alt="E-Mail"></td>
+                <td>
+                    I don't have an E-Mail <a href="mailto:aaron881015@hotmail.com?subject=TEST_Mail">
+                        <p>😂😂😂😂😂</p>
+                    </a>
+                </td>
+            </tr>
+            <tr width=10% height=10%>
+                <td><img src="facebook.png" width="40" height="40" alt="Facebook"></td>
+                <td><a href="https://www.facebook.com/howfunofficial/">FaceBook</a></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <div class="centre">
+                        學歷
+                        <ol style="margin-left: 170px; margin-right: auto; ">
+                            <li style="margin-right: 170px">
+                                元智大學 - Yuan Ze University
+                                <ul>
+                                    <li>2018.09.10~未知 🤔🤔</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </center>
+    <form action="#">
+        <div>&nbsp;</div>
+        <div align="center">
+            <input id="rollButton" type="button" value="Change Background"
+                style="width:170px;height:40px;border:2px #9999FF dashed;">
+        </div>
+    </form>
+
+    <br /><br />
+    <!--劃出一條直線-->
+    <hr class="featurette-divider">
+
+    <!-- FOOTER -->
+    <footer class="container">
+        <p class="float-right"><a href="#">回到頂端</a></p>
+        <p>&copy; 2017-2019 ADSF Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+
+</body>
+
+</html>
