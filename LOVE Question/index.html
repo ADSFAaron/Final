@@ -12,12 +12,12 @@
     <script src="main.js"></script>
 
     <style>
-            @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC');
-    
-            body {
-                font-family: 'Noto Sans TC', sans-serif;
-            }
-        </style>
+        @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC');
+
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+    </style>
 </head>
 
 <body>
@@ -28,9 +28,9 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav mr-auto" style="width: 100%;height:3em;">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">首頁</a>
+                        <a class="nav-link" href="../index.html">首頁</a>
                     </li>
 
                     <li class="nav-item">
@@ -38,8 +38,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" target="_blank"
-                            href="../AutoArrangementSystem/index.html">自動排課系統</a>
+                        <a class="nav-link" target="_blank" href="../AutoArrangementSystem/index.html">自動排課系統</a>
                     </li>
 
                     <li class="nav-item">
@@ -63,12 +62,17 @@
         </nav>
     </header>
     <br /><br /><br /><br />
+    <br><br>
     <h1>2019，你的愛情是甚麼滋味?</h1>
+    <br><br>
 
-    <div>
-        <h2 id="question"></h2>
-        <div id="options"></div>
+    <div id="spec" style="display: none;">
+        <ul>
+            <h2 id="question"></h2>
+            <div id="options"></div>
+        </ul>
     </div>
+
     <input type="button" name="Button" id="startButton" value="開始作答">
 </body>
 

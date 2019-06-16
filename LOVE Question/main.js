@@ -4,6 +4,7 @@ $(document).ready(function () {
 
     //當按下按鈕，要做的事情放在這裡面
     $("#startButton").click(function () {
+        document.getElementById("spec").setAttribute("style", "");
 
         //如果還沒開始作答就從這裡開始
         if (currentQuiz == null) {
@@ -15,12 +16,13 @@ $(document).ready(function () {
 
             $("#question").empty();
 
+            var tmp = ['f', 's', 't'];
             //將選項內容添加至選項區塊
             for (var x = 0; x < questions[0].answers.length; x++) {
                 //輸出radio選項
-                console.log(x);
-                $("#options").append("<input type = 'radio' name = 'options' value = '" + x + "'>" + "<label>" +
-                    questions[0].answers[x][0] + "</label><br><br>");
+                //console.log(x);
+                $("#options").append("<li><input type = 'radio' id = '" + tmp[x] + "-option' name = 'options' value = '" + x + "'><label for='" + tmp[x] + "-option'" + ">" +
+                    questions[0].answers[x][0] + "</label> \n <div class='check'><div class = 'inside'></div></div><hr></li>");
             }
 
             //將按鈕上的文字轉換成下一題
@@ -63,10 +65,12 @@ $(document).ready(function () {
                         //清空選項區塊
                         $("#options").empty();
 
+                        var tmp = ['f', 's', 't'];
                         //顯示新的選項內容
                         for (var x = 0; x < questions[currentQuiz].answers.length; x++) {
                             console.log("x: " + x);
-                            $("#options").append("<input type = 'radio' name = 'options' value = '" + x + "'><label>" + questions[currentQuiz].answers[x][0] + "</label><br><br>");
+                            $("#options").append("<li><input type = 'radio' id = '" + tmp[x] + "-option' name = 'options' value = '" + x + "'><label for='" + tmp[x] + "-option'" + ">" +
+                                questions[currentQuiz].answers[x][0] + "</label> \n <div class='check'><div class = 'inside'></div></div><hr></li>");
                         }
 
                     }
